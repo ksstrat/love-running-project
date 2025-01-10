@@ -1,4 +1,4 @@
-/* Google Fonts import */
+/* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /*Generic project styles */
+    /* Generic project styles */
     color: #3a3a3a;
     font-family: "Lato", sans-serif;
 }
@@ -63,7 +63,7 @@ header a {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* Navbar style with dropdown toggle */
+/* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
     background-color: #ffffff;
@@ -88,7 +88,7 @@ nav {
     font-size: 2rem;
 }
 
-/* Main Content */
+/* Main content */
 main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
@@ -104,7 +104,7 @@ main {
 }
 
 #cover-text {
-    /* Final rgba value sets the opacity so it is semi-transparent*/
+    /* Final rgba value sets the opacity so it is semi-transparent */
     background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
     position: absolute;
@@ -130,8 +130,6 @@ main {
     text-align: center;
     margin-bottom: 20px;
 }
-
-/* Benefits */
 
 #benefits-physical > div, #benefits-mental > div {
     line-height: 20px;
@@ -164,10 +162,10 @@ main {
     justify-content: center;
 }
 
-/* Meetup times section */
+/* Meetup Times section */
 
 #times {
-    background: url(../images/dublin-city.webp) no-repeat center;
+    background: url('../images/dublin-city.webp') no-repeat center/cover;
     /* Handles responsivity without the need for a media query */
     display: flex;
     flex-wrap: wrap;
@@ -182,12 +180,12 @@ main {
     Each div will expand to fill the available space on its row */
     flex-basis: 200px;
     flex-grow: 1;
-    /* Creates a grid of meetup time over the background image */
+    /* Creates a grid of meetup time divs over the background image */
     border: 2px solid white;
 }
 
 #times h3 {
-    /* Override the heading colour set in general styles*/
+    /* Override the heading colour set in general styles */
     color: #fafafa;
 }
 
@@ -203,10 +201,10 @@ main {
 #social-networks i {
     font-size: 160%;
     padding: 5%;
-    color:#3a3a3a;
+    color: #3a3a3a;
 }
 
-/* Media query: tablets and larger (768px and up)*/
+/* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
     nav {
@@ -236,7 +234,7 @@ main {
 
     /* Main content */
     main {
-        /*Push main content down to accomodate larger header */
+        /* Push main content down to accommodate larger header */
         margin-top: 79px;
     }
 
@@ -261,11 +259,11 @@ main {
 
     #benefits-mental > div {
         text-align: end;   
-        align-items: flex-end;
+        align-self: flex-end;
     }
 }
 
-/* Media query: tablets and larger (992px and up)*/
+/* Large devices (latops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     /* Anchors */
     #menu a:hover {
@@ -275,14 +273,14 @@ main {
 
 /* Media query: tablets and larger (1200px and up)*/
 @media screen and (min-width: 1200px) {
-    /* Reasons Section */
+    /* Reasons section */
     #benefits {
             display: flex;
             flex-direction: row;
     }
 
     #benefits > div {
-        flex: 1
+        flex: 1;
     }
 
     #benefits-image {
