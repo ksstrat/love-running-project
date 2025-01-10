@@ -76,12 +76,12 @@ nav {
     display: block;
 }
 
-.nav-toggle-label {
-    font-size: 2rem;
-}
-
 #nav-toggle {
     display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* Main Content */
@@ -117,7 +117,7 @@ main {
 
 #reasons {
     width: 90%;
-    margin: 20px auto 20px auto;
+    margin: 20px auto;
 }
 
 
@@ -129,12 +129,12 @@ main {
 
 /* Benefits */
 
-#benefits-physical, #benefits-mental {
+#benefits-physical > div, #benefits-mental > div {
     line-height: 20px;
     margin-bottom: 20px;
 }
 
-#benefits {
+#benefits p {
     padding: 0 20px;
 }
 
